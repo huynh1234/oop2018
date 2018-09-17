@@ -48,12 +48,13 @@ public class Student {
 		return this.email;
 	}
 	
-	public void getInfo()
+	public String getInfo()
 	{
 		System.out.println("name = " + this.name);
 		System.out.println("id 	 = " + this.id);
 		System.out.println("group = " + this.group);
 		System.out.println("email = " + this.email);
+		return NULL;
 	}
 	
 	
