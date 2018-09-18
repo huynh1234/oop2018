@@ -1,87 +1,85 @@
 package week1;
 
-import javax.xml.bind.SchemaOutputResolver;
-
 public class Student {
-	private String name;
-	private String id;
-	private String group;
-	private String email; 
-	
 
+    // TODO: khai báo các thuộc tính cho Student
+    private String id;
+    private String name;
+    private String group;
+    private String email;
+    // TODO: khai báo các phương thức getter, setter cho Student
 
-	public void setName(String name)
-	{
-		this.name = name;
-	}
-	public String getName()
-	{
-		return this.name;
-	}
-	
+    /**
+     * Constructor 1
+     */
+    public String getId() {
+        return id;
+    }
 
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	public void setID(String id)
-	{
-		this.id = id;
-	}
-	public String getID()
-	{
-		return this.id;
-	}
-	
-	public void setGroup(String group)
-	{
-		this.group = "INT22041";
-	}
-	public String getGroup()
-	{
-		return this.group;
-	}
-	
-	public void setEmail(String email)
-	{
-		this.email = email;
-	}
-	public String getEmail()
-	{
-		return this.email;
-	}
-	
-	public String getInfo()
-	{
-		System.out.println("name = " + this.name);
-		System.out.println("id 	 = " + this.id);
-		System.out.println("group = " + this.group);
-		System.out.println("email = " + this.email);
-		return NULL;
-	}
-	
-	
-	
-	// Cau 7 ( 3 cai ham Student o duoi nhe' )
-	public void Student()
-	{
-		this.name = "Student";
-		this.id = "000";
-		this.group = "INT22041";
-		this.email = "uet@vnu.edu.vn";
-	}
-	
-	public void Student(String n, String sid, String em)
-	{
-		this.group = "INT22041";
-		
-		this.name = n;
-		this.id = sid;
-		this.email = em;
-	}
-	
-	public void Student(Student s)
-	{
-		this.name = s.name;
-        this.id = s.id;
-        this.group = s.group;
-        this.email = s.email;
-	}
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+
+    public void setGroup(String group) {
+        this.group=group;
+    }
+    public void setEmail(String email){
+        this.email=email;
+    }
+    public String getEmail(){
+        return email;
+    }
+    Student() {
+
+        name ="Student";
+        id="000";
+        group="INT22041";
+        email="uet@vnu.edu.vn";
+    }
+
+    /**
+     * Constructor 2
+     * @param n
+     * @param sid
+     * @param em
+     */
+    Student(String n, String sid, String em) {
+        this.name=n;
+        this.id=sid;
+        this.email=em;
+        this.group="INT22041";
+
+    }
+
+    /**
+     * Constructor 3
+     * @param s
+     */
+    Student(Student s) {
+        this.name=s.name;
+        this.id=s.id;
+        this.email=s.email;
+        this.group=s.group;
+
+    }
+
+    String getInfo() {
+        System.out.println(name);
+        System.out.println(id);
+        System.out.println(group);
+        System.out.println(email);
+        return null; // xóa dòng này sau khi cài đặt
+    }
 }
