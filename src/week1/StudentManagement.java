@@ -1,93 +1,78 @@
 package week1;
 
 public class StudentManagement {
-	//Cau 11
-	Student[] arrayStudent = new Student[100];
-	
-	//Cau 12
-	public static void studentsByGroup(Student[] arrayStudent, int SISO)
-	{
-		for( int i = 0 ; i < SISO ; i ++ )
-		{
-			arrayStudent[i].getInfo();
-		}
-		
-	}
-	
-	//Cau 13
-	public static void removeStudent(Student[] arrayStudent , int SISO, String id)
-	{
-		for( int i = 0 ; i < SISO ; i ++ )
-		{
-			int sinhvienthuN;
-			if (arrayStudent[i].getID() == id )
-			{
-				sinhvienthuN = i;	
-				for(int j = i ; j < SISO ; j++)
-				{
-					arrayStudent[j] = arrayStudent[j+1];
-				}
-				SISO = SISO - 1;
-				break;
-			}
-		}
-	}
-	
-	//Cau 9
-	public static boolean sameGroup(Student student01, Student student02)
-	{
-		if (student01.getGroup() == student02.getGroup())
-		{
-			return true;
-		}
-		else return false;
-	}
-	
-	public static void main(String[] args) {
-		Student student = new Student();
-		
-		
-		student.setName("Son");
-		student.setID("17020999");
-		student.setGroup("K62IE4");
-		student.setEmail("sonsieg1999@gmail.com");
-		
-		System.out.println("ten sv = " + student.getName());
-		
-		student.getInfo();
-		
-		// cau 8
-		Student student01 = new Student();
-		student01.Student();
-		student01.getInfo();
-		
-		Student student02 = new Student();
-		student02.Student("Son", "1702xxxx", "abcxyz@gmail.com");
-		student02.getInfo();
-		
-		Student student03 = new Student();
-		student03.Student(student02);
-		student03.getInfo();	
-		
-		
-		// Kiem tra o Cau 9
-		if ( sameGroup(student01, student02) == true ) System.out.println("Cung lop");
-		else System.out.println("Khong cung lop");
-		
-		// Cau 10
-		Student s01 = new Student();
-		s01.Student("A", "1702xxxx", "abcxyz@gmail.com");
-		
-		Student s02 = new Student();
-		s02.Student("B", "1702xxxx", "abcxyz@gmail.com");
-		
-		Student s03 = new Student();
-		s03.Student("B", "1702xxxx", "abcxyz@gmail.com");
-		s03.setGroup("INT1111");
-		
-		System.out.println("s01 vs s02" + sameGroup(s01, s02));		
-		System.out.println("s01 vs s03" + sameGroup(s01, s03));	
-		
-		
-	}
+
+    int max=100;
+    Student[] students=new Student[max];
+
+    public boolean sameGroup(Student s1, Student s2) {
+        if(s1.getGroup().equals(s2.getGroup())) return true;
+        return false;
+
+    }
+
+    void studentsByGroup() {
+        int j=1;
+        for (int i=0;i<100;i++){
+            System.out.println("Lop "+j+" :");
+            System.out.println(students[i].getInfo());
+
+
+
+        }
+    }
+
+    void removeStudent(String id) {
+
+        for( int i = 0 ; i < 100 ; i ++ )
+        {
+            int sinhvienthuN;
+            if (students[i].getId() == id )
+            {
+                sinhvienthuN = i;
+                for(int j = i ; j < 100 ; j++)
+                {
+                    students[j] = students[j+1];
+                }
+                max = max - 1;
+
+            }
+        }
+    }
+
+    public static void main(String[] args)
+    {
+
+        Student a=new Student();
+        a.setName("Dang Anh Son");
+        a.setEmail("maxseo9x@gmail.com");
+        a.setGroup("INT2204");
+        a.setId("17020999");
+
+        System.out.println("ten Sv:" + a.getName());
+        a.getInfo();
+
+        //lam cau 8:
+        Student b=new Student();
+        b.getInfo();
+
+        Student c=new Student("Son ", "17020999", "abcxyz@gmail.com");
+        c.getInfo();
+
+        Student d=new Student(a);
+        d.getInfo();
+
+        // cau10
+        Student s01 = new Student("A", "17020888", "num1@gmail.com");
+
+        Student s02 = new Student("B", "17020777", "num2@gmail.com");
+
+        Student s03 = new Student();
+        s03.setGroup("INT22042");
+        StudentManagement ss = new StudentManagement();
+        System.out.println( "Student 1vs2 " +ss.sameGroup(s01, s02));
+        System.out.println("Student 1vs3 " + ss.sameGroup(s01, s03));
+        System.out.println("Student 2vs3 " + ss.sameGroup(s02, s03));
+
+    }
 }
