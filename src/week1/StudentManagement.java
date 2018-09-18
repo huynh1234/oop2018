@@ -1,14 +1,12 @@
-package week1;
+   package week1;
 
 public class StudentManagement {
 
-    int max=100;
-    Student[] students=new Student[max];
+    int soluong=100;
+    Student[] students=new Student[soluong];
 
     public boolean sameGroup(Student s1, Student s2) {
-        if(s1.getGroup().equals(s2.getGroup())) return true;
-        return false;
-
+        return s1.getGroup().equals(s2.getGroup());
     }
 
     void studentsByGroup() {
@@ -34,7 +32,7 @@ public class StudentManagement {
                 {
                     students[j] = students[j+1];
                 }
-                max = max - 1;
+                soluong = soluong - 1;
 
             }
         }
@@ -63,9 +61,9 @@ public class StudentManagement {
         d.getInfo();
 
         // cau10
-        Student s01 = new Student("A", "17020888", "num1@gmail.com");
+        Student s01 = new Student("M", "17020888", "xxx@gmail.com");
 
-        Student s02 = new Student("B", "17020777", "num2@gmail.com");
+        Student s02 = new Student("N", "17020777", "yyy@gmail.com");
 
         Student s03 = new Student();
         s03.setGroup("INT22042");
