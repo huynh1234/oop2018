@@ -2,8 +2,8 @@
 
 public class StudentManagement {
 
-    int soluong=100;
-    Student[] students=new Student[soluong];
+    int max=100;
+    Student[] students=new Student[max];
 
     public boolean sameGroup(Student s1, Student s2) {
         return s1.getGroup().equals(s2.getGroup());
@@ -32,7 +32,7 @@ public class StudentManagement {
                 {
                     students[j] = students[j+1];
                 }
-                soluong = soluong - 1;
+                max = max - 1;
 
             }
         }
