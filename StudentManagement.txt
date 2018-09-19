@@ -56,7 +56,7 @@ public class StudentManagement {
 		
 		student.getInfo();
 		
-		// cau 8
+	// cau 8
 		Student student01 = new Student();
 		student01.Student();
 		student01.getInfo();
