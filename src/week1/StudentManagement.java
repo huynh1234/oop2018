@@ -2,8 +2,13 @@
 
 public class StudentManagement {
 
+<<<<<<< Updated upstream
     int max=100;
     Student[] students=new Student[max];
+=======
+    int soluong=100;
+    Student[] students=new Student[soluong];
+>>>>>>> Stashed changes
 
     public boolean sameGroup(Student s1, Student s2) {
         return s1.getGroup().equals(s2.getGroup());
@@ -32,7 +37,11 @@ public class StudentManagement {
                 {
                     students[j] = students[j+1];
                 }
+<<<<<<< Updated upstream
                 max = max - 1;
+=======
+                soluong = soluong - 1;
+>>>>>>> Stashed changes
 
             }
         }
