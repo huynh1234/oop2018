@@ -2,39 +2,48 @@ package week1;
 
 public class Student {
 
-    // TODO: khai báo các thuộc tính cho Student
-
+    // TODO: khai b?o c?c thu?c t?nh cho Student
+    //bai1:
     private String name;
     private String id;
     private String group;
     private String email;
 
 
-    // TODO: khai báo các phương thức getter, setter cho Student
-    public String getname(){
+    // TODO: khai b?o c?c ph??ng th?c getter, setter cho Student
+
+    public String getName() {
         return name;
     }
-    public void setname(String name){
-        this.name = name ;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public String getid(){
+
+    public String getId() {
         return id;
     }
-    public void setid(String id){
+
+    public void setId(String id) {
         this.id = id;
     }
-    public String getgroup(){
+
+    public String getGroup() {
         return group;
     }
-    public void setgroup(String group){
-        this.group=group;
+
+    public void setGroup(String group) {
+        this.group = group;
     }
-    public String getemail(){
+
+    public String getEmail() {
         return email;
     }
-    public void setemail(String email){
-        this.email=email;
+
+    public void setEmail(String email) {
+        this.email = email;
     }
+
     /**
      * Constructor 1
      */
@@ -50,8 +59,9 @@ public class Student {
         name =n;
         id= sid;
         email=em;
+        group = "INT22041";
     }
-
+//�dsfasdfasdf
     /**
      * Constructor 3
      * @param
@@ -59,22 +69,24 @@ public class Student {
 
     Student() {
         // TODO:
-        name="Nguyen Duc huynh";
-        id="17020812";
+        name="Student";
+        id="000";
         group="INT22041";
-        email="huynhphoke@gmail.com";
+        email="uet@gmail.com";
     }
 
     Student(Student s){
-        name= s.getname();
-        id= s.getid();
-        group=s.getgroup();
-        email=getemail();
+        this.name = s.name;
+        this.id = s.id;
+        this.group = s.group;
+        this.email = s.email;
     }
 
-    String getInfo() {
+    void getInfo() {
         // TODO:
-        return (name + id+ group+ email);
-
+        System.out.println("name = " + this.name);
+        System.out.println("id 	 = " + this.id);
+        System.out.println("group = " + this.group);
+        System.out.println("email = " + this.email);
     }
 }
