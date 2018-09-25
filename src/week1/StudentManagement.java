@@ -19,6 +19,6 @@ public class StudentManagement {
 
     public static void main(String[] args) {
         // TODO:
-System.out.println("tui dang xem sex");
+System.out.println("tui dang xesdasdasd");
     }
 }
