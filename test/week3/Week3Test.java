@@ -9,7 +9,7 @@ public class Week3Test {
         assertEquals(6, week3.max(2, 6));
         assertEquals(3, week3.max(1, 3));
         assertEquals(7, week3.max(0, 7));
-        assertEquals(0, week3.max(0, 1));
+        assertEquals(1, week3.max(0, 1));
     }
 
     // TODO: Viết 5 testcase cho phương thức minOfArray()
