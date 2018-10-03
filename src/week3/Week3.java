@@ -32,8 +32,8 @@ public class Week3 {
         // TODO: Viết chương trình tính chỉ số BMI và in ra kết quả đánh giá
         double BMI = weight/(height*height);
         if (BMI<18.5) return"thiếu cân";
-        if (BMI>=18.5&&BMI<=22.99) return "Bình thường";
-        if (BMI>=23&&BMI<=24.99) return "Thừa cân";
+        else if (BMI>=18.5&&BMI<=22.99) return "Bình thường";
+        else if (BMI>=23&&BMI<=24.99) return "Thừa cân";
             return "Béo phì";
     }
 
