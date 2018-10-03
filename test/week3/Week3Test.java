@@ -15,16 +15,16 @@ public class Week3Test {
     // TODO: Viết 5 testcase cho phương thức minOfArray()
     @Test
     public void testminOfArray(){
-        int[] b={1, 5, 4, 7, 8, 5};
-        assertEquals(1, week3.max(b));
+        int[] b={1, 5, 4, 7, 8, 5, 6};
+        assertEquals(1, week3.minOfArray(b));
         int[] c={1, 5, 4, 7, 8, 5, 0, -1, -2};
-        assertEquals(-2, week3.max(c));
+        assertEquals(-2, week3.minOfArray(c));
         int[] d={1, 5, 4, 7, 8, 5, 6, 0};
-        assertEquals(0, week3.max(d));
+        assertEquals(0, week3.minOfArray(d));
         int[] e={1, 5, 4, 7, 8, 5, -5};
-        assertEquals(-5, week3.max(e));
+        assertEquals(-5, week3.minOfArray(e));
         int[] f={1, 5, 4, -10, 7, 8, 5};
-        assertEquals(-10, week3.max(f));
+        assertEquals(-10, week3.minOfArray(f));
     }
 
 
