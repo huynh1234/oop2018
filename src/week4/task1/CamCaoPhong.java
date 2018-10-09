@@ -38,7 +38,6 @@ public class CamCaoPhong extends QuaCam {
 
     public void inCamcaophong( CamCaoPhong c1, CamCaoPhong c2){
         System.out.println(c1.getTenqua()+", Noi nhap:  " + c1.getNoinhap());
-
         System.out.println(c2.getTenqua()+", Noi nhap:  " + c2.getNoinhap());
     }
 

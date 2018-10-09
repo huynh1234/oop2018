@@ -2,13 +2,16 @@ package week4.task1;
 
 public class Main {
     public static void main(String[] args) {
+
         HoaQua h = new HoaQua();
         HoaQua h2 = new HoaQua("qua Cam", "Hai Duong");
         HoaQua h1 = new HoaQua("qua Tao","Hai Duong");
+        h.gioiThieu();
         System.out.println("\n");
         QuaCam c = new QuaCam();
         QuaCam c1 = new QuaCam("Ha Noi",10);
         QuaCam c2 = new QuaCam("Hai Duong",20);
+        c.gioiThieu();
         c.kiemTra(c1,c2);
         System.out.println("\n");
         CamCaoPhong cp = new CamCaoPhong();
@@ -22,6 +25,7 @@ public class Main {
         cp.gioiThieucamcaophong(cam);
         System.out.println("\n");
         cp.inCamcaophong(cam1,cam2);
+
         System.out.println("\n");
         QuaTao t = new QuaTao();
         t.gioiThieutao();

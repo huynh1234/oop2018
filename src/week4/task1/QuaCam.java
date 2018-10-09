@@ -32,10 +32,7 @@ public class QuaCam extends HoaQua {
         if (soSanhnoi(c1,c2)){
             System.out.println("Nhap cung noi");
         }else{
-            System.out.println("Nhap khac cho");
+            System.out.println("Nhap khac noi");
         }
     }
-
-
-
 }

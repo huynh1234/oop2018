@@ -29,6 +29,11 @@ public class HoaQua {
     public void setNoinhap(String noinhap) {
         this.noinhap = noinhap;
     }
+
+    public void gioiThieu(){
+        System.out.println("Hoa qua rat nhieu loai khac nhau");
+    }
+
     public boolean soSanhnoi(HoaQua hq1, HoaQua hq2){
         return hq1.getNoinhap() == hq2.getNoinhap();
 
