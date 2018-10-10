@@ -15,10 +15,10 @@ public class quacam extends hoaqua{ // cam cao phong ke thua hoa qua
         this.mui=mui;
     }
     public void quacamnhuthenao(camcaophong sc){
-        System.out.print("Cam Cao Phong co ten "+ sc.getten());
-        System.out.print("Cam Cao Phong nhap tai "+ sc.getmadin());
-        System.out.print("so luong Cam Cao Phong  "+ sc.getsoluong());
-        System.out.print("Cam Cao Phong co khoi luong "+ sc.getmui());
+        System.out.print("Cam co ten "+ sc.getten());
+        System.out.print("Cam nhap tai "+ sc.getmadin());
+        System.out.print("so luong Cam"+ sc.getsoluong());
+        System.out.print("Cam Cao Phong co mui"+ sc.getmui());
     }
 
 
