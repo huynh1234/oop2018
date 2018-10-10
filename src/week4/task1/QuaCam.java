@@ -1,6 +1,8 @@
 package week4.task1;
 
 public class QuaCam extends HoaQua {
+    //ke thua tu HoaQua
+    //khai bao thuoc tinh cua QuaCam
     private int giaban;
     private String noiban;
 
@@ -28,7 +30,7 @@ public class QuaCam extends HoaQua {
     public void setNoiban(String noiban) {
         this.noiban = noiban;
     }
-    public void kiemTra(QuaCam c1, QuaCam c2){
+    public void kiemTra(QuaCam c1, QuaCam c2){//ham kiem tra xem 2 qua co cung noi ban khong
         if (soSanhnoi(c1,c2)){
             System.out.println("Nhap cung noi");
         }else{
