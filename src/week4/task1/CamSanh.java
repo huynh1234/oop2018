@@ -3,7 +3,7 @@ package week4.task1;
 public class CamSanh extends CamCaoPhong{
     private double can;
     private String soluong;
-
+//khai bao phuong thuc can
     public double getCan() {
         return can;
     }
@@ -11,7 +11,7 @@ public class CamSanh extends CamCaoPhong{
     public void setCan(double can) {
         this.can = can;
     }
-
+ //  khai bao phuong thuc so luong
     public String getSoluong() {
         return soluong;
     }
@@ -21,6 +21,7 @@ public class CamSanh extends CamCaoPhong{
     }
 
     public void gioiThieucamsanh(CamCaoPhong c1){
+        //in ra thong tin cua hoa qua bao gom ngay nhap va so luong
         System.out.println("Ngay nhap" + c1.getNoinhap() + ", So luong nhap: " + getSoluong());
     }
 }
