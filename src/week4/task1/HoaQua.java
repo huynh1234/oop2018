@@ -13,7 +13,6 @@ public class HoaQua {
         this.tenqua = ten;
         this.noinhap = n;
     }
-
     public String getTenqua() {
         return tenqua;
     }
@@ -35,6 +34,7 @@ public class HoaQua {
     }
 
     public boolean soSanhnoi(HoaQua hq1, HoaQua hq2){
+        //so sanh noi nhap 2 loai hoa qua
         return hq1.getNoinhap() == hq2.getNoinhap();
 
     }
