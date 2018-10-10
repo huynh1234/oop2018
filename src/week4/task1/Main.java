@@ -6,13 +6,13 @@ public class Main {
         HoaQua h = new HoaQua();
         HoaQua h2 = new HoaQua("qua Cam", "Hai Duong");
         HoaQua h1 = new HoaQua("qua Tao","Hai Duong");
-        h.gioiThieu();
+        h.gioiThieu();//in ra thong tin cua h tu ham gioiThieu
         System.out.println("\n");
         QuaCam c = new QuaCam();
         QuaCam c1 = new QuaCam("Ha Noi",10);
         QuaCam c2 = new QuaCam("Hai Duong",20);
-        c.gioiThieu();
-        c.kiemTra(c1,c2);
+        c.gioiThieu();//in ra thong tin cua c tu ham gioiThieu
+        c.kiemTra(c1,c2);//kiem tra xem c1 c2 co cung noi khong
         System.out.println("\n");
         CamCaoPhong cp = new CamCaoPhong();
         CamCaoPhong cam1 = new CamCaoPhong();
