@@ -1,4 +1,4 @@
-package week2.task1;
+/**package week2.task1;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -27,3 +27,4 @@ public class Task1Test {
         assertEquals(832040, Task1.fibonacci(30));
     }
 }
+**/

@@ -1,4 +1,4 @@
-package week2;
+/**package week2;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
@@ -12,3 +12,4 @@ import week2.task2.FractionTest;
 })
 public class Week2Test {
 }
+**/

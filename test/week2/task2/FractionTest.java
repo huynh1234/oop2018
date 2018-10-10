@@ -1,4 +1,4 @@
-package week2.task2;
+/**package week2.task2;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -50,3 +50,4 @@ public class FractionTest {
         assertEquals(result, new Fraction(5, 6));
     }
 }
+**/
