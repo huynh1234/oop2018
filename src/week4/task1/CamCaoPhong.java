@@ -1,6 +1,6 @@
 package week4.task1;
 
-public class CamCaoPhong extends QuaCam {
+public class CamCaoPhong extends QuaCam {//cam cao phong ke thua tu QuaCam
     private double khoiluong;
     private String huongvi;
 
@@ -32,11 +32,11 @@ public class CamCaoPhong extends QuaCam {
 
 
     public void gioiThieucamcaophong(CamCaoPhong s){
-        System.out.println("Cam cao phong co vi " + s.getHuongvi());
-        System.out.println("Cam cao phong khoi luong " + s.getKhoiluong());
+        System.out.println("Cam cao phong co vi " + s.getHuongvi());//in ra huong vi cam cao phong
+        System.out.println("Cam cao phong khoi luong " + s.getKhoiluong());//in ra khoi luong cam cao phong
     }
 
-    public void inCamcaophong( CamCaoPhong c1, CamCaoPhong c2){
+    public void inCamcaophong( CamCaoPhong c1, CamCaoPhong c2){//in thong tin cua hoa qua va noi nhap cua no
         System.out.println(c1.getTenqua()+", Noi nhap:  " + c1.getNoinhap());
         System.out.println(c2.getTenqua()+", Noi nhap:  " + c2.getNoinhap());
     }
