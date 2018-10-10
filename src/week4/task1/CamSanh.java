@@ -1,6 +1,6 @@
 package week4.task1;
 
-public class CamSanh extends CamCaoPhong{
+public class CamSanh extends QuaCam{
     private double can;
     private String soluong;
 //khai bao phuong thuc can
