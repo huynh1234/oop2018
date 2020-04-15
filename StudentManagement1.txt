@@ -31,5 +31,7 @@ public class StudentManagement {
         System.out.println(st.sameGroup(me1,me2));
         System.out.println(st.sameGroup(me2,me3));
 
-        }
+	//asdddddddddddddd 
+       }
+}
     
